@@ -19,7 +19,7 @@ public class PathSum {
             // root.left root.right
             if(root == null){
                 return false;
-            } else if (root.left == null && root.right == null && root.val == 0){
+            } else if (root.left == null && root.right == null && sum == 0){
                 return true;
             } else {
                 return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
