@@ -22,7 +22,7 @@ public class PathSum {
             } else if (root.left == null && root.right == null && root.val == 0){
                 return true;
             } else {
-                return hasPathSum(root.left, sum - root.val) || hasPathSum(root.left, sum - root.val);
+                return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
             }
 
         }
