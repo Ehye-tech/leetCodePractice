@@ -9,7 +9,7 @@ class ValidAnagram {
         int[] alphabet = new int[26];
         for (int i = 0; i < s.length(); i++) {
             //get char from the 0 index of s
-            int i1 = alphabet[s.charAt(i) - 'a']++;
+            alphabet[s.charAt(i) - 'a']++;
             //get char from the 0 index of t
             alphabet[t.charAt(i) - 'a']--;
         }

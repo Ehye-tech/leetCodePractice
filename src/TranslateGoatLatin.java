@@ -21,7 +21,8 @@ class TranslateGoatLatin{
 
             } else {
 
-                ans.append(word.substring(1));  //put the first digit for non-vowel
+                ans.append(word.substring(1));
+                //put the first digit for non-vowel
 
                 ans.append(word.substring(0, 1));
 
