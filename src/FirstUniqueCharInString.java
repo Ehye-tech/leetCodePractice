@@ -6,7 +6,7 @@ class FirstUniqueCharInString {
         }
 
         for (int i = 0; i < word.length(); i++) {
-            if (counter[word.charAt(i) - 'a'] == 1) {
+            if (counter[word.charAt(i) - 'a'] > 1] == 1) {
                 return i;
             }
         }
